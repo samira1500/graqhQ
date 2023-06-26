@@ -1,0 +1,22 @@
+schema {
+    query: Query
+}
+
+type Query{
+	getPerson(id:Int):Person
+	getPersons:[Person]
+}
+
+type Person{
+	id:Int
+	name:String
+	lastName:String
+	cars:[Car]
+}
+
+type Car {
+	id:Int
+	type:String
+	model:String
+	price:Int
+}

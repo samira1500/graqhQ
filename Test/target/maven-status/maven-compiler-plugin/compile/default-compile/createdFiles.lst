@@ -1,0 +1,12 @@
+org\ws\resources\GraphqlService.class
+org\facade\PersonFacadeLocal.class
+MainRun.class
+org\ws\resources\QraphQuery.class
+org\entities\GraphQLRequestBody.class
+org\services\PersonService.class
+org\entities\Person.class
+org\facade\PersonFacade.class
+org\facade\PersonGraphQlApi.class
+org\ws\application\GraphApplication.class
+org\services\PersonController.class
+org\entities\Item.class

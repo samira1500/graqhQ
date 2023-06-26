@@ -1,0 +1,19 @@
+query getAllPerson {
+  getPersons{
+    name
+    lastName
+    cars{
+        model
+        type
+        }
+  }
+}
+
+query getPersonById {
+  getPerson(id: 1) {
+    lastName
+     cars{
+       type
+	}
+  }
+}

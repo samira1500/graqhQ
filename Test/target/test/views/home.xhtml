@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:x="http://java.sun.com/jsp/jstl/xml">
+
+<h:head></h:head>
+
+<style>
+.div-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.wordClass {
+	border: 1px #ddd solid;
+	margin: 2px;
+	padding: 10px;
+	background-color: antiquewhite;
+	text-align: center;
+}
+</style>
+<body>
+	<h:form prependId="false">
+		<div class="div-flex">
+
+			<ui:repeat var="person" value="#{personservice.persons}">
+				<span class="wordClass"> #{person.name}-#{person.lastName} </span>
+			</ui:repeat>
+		</div>
+
+	</h:form>
+</body>
+</html>
